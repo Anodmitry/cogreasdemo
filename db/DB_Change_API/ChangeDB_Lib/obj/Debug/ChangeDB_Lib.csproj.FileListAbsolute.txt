@@ -1,0 +1,12 @@
+D:\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\bin\Debug\ChangeDB_Lib.dll
+D:\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\bin\Debug\ChangeDB_Lib.pdb
+D:\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\obj\Debug\ChangeDB_Lib.csprojResolveAssemblyReference.cache
+D:\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\obj\Debug\ChangeDB_Lib.dll
+D:\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\obj\Debug\ChangeDB_Lib.pdb
+D:\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\bin\Debug\End_dll\ChangeDB_Lib.dll
+D:\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\bin\Debug\End_dll\ChangeDB_Lib.pdb
+C:\Users\DmItRaN\YandexDisk\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\bin\Debug\End_dll\ChangeDB_Lib.dll
+C:\Users\DmItRaN\YandexDisk\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\bin\Debug\End_dll\ChangeDB_Lib.pdb
+C:\Users\DmItRaN\YandexDisk\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\obj\Debug\ChangeDB_Lib.csprojResolveAssemblyReference.cache
+C:\Users\DmItRaN\YandexDisk\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\obj\Debug\ChangeDB_Lib.dll
+C:\Users\DmItRaN\YandexDisk\university\KURSOVAYA\DB_Change_API\ChangeDB_Lib\obj\Debug\ChangeDB_Lib.pdb

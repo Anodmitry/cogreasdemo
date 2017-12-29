@@ -1,0 +1,1 @@
+Using ms office 2007/2010 you should convert envdb.accdb to ms sql server format.

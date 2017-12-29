@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{284CB028-A31C-4FA6-BE32-B2A133E7AB76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DB_Change_API</RootNamespace>
+    <AssemblyName>DB_Change_API</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddActObjForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddActObjForm.Designer.cs">
+      <DependentUpon>AddActObjForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPhenoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPhenoForm.Designer.cs">
+      <DependentUpon>AddPhenoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAOCharForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAOCharForm.Designer.cs">
+      <DependentUpon>AddAOCharForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPotentialInfluenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPotentialInfluenceForm.Designer.cs">
+      <DependentUpon>AddPotentialInfluenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRobotCharForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRobotCharForm.Designer.cs">
+      <DependentUpon>AddRobotCharForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRobotDefenceTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRobotDefenceTypeForm.Designer.cs">
+      <DependentUpon>AddRobotDefenceTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeAOCharForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeAOCharForm.Designer.cs">
+      <DependentUpon>ChangeAOCharForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePhenoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePhenoForm.Designer.cs">
+      <DependentUpon>ChangePhenoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeRobotCharForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeRobotCharForm.Designer.cs">
+      <DependentUpon>ChangeRobotCharForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeRobotDefenceTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeRobotDefenceTypeForm.Designer.cs">
+      <DependentUpon>ChangeRobotDefenceTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelActObjForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelActObjForm.Designer.cs">
+      <DependentUpon>DelActObjForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelAOCharForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelAOCharForm.Designer.cs">
+      <DependentUpon>DelAOCharForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePhenoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePhenoForm.Designer.cs">
+      <DependentUpon>DeletePhenoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePotentialInfluenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePotentialInfluenceForm.Designer.cs">
+      <DependentUpon>DeletePotentialInfluenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelPhenoFromPoligonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelPhenoFromPoligonForm.Designer.cs">
+      <DependentUpon>DelPhenoFromPoligonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelPoligonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelPoligonForm.Designer.cs">
+      <DependentUpon>DelPoligonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelRobotCharForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelRobotCharForm.Designer.cs">
+      <DependentUpon>DelRobotCharForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelRobotDefenceTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelRobotDefenceTypeForm.Designer.cs">
+      <DependentUpon>DelRobotDefenceTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyActionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyActionsForm.Designer.cs">
+      <DependentUpon>ModifyActionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyActObjChar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyActObjChar.Designer.cs">
+      <DependentUpon>ModifyActObjChar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyCharacteristics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyCharacteristics.Designer.cs">
+      <DependentUpon>ModifyCharacteristics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyActObjTypesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyActObjTypesForm.Designer.cs">
+      <DependentUpon>ModifyActObjTypesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyInteractionTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyInteractionTypes.Designer.cs">
+      <DependentUpon>ModifyInteractionTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetAOTypeCanHaveCharForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetAOTypeCanHaveCharForm.Designer.cs">
+      <DependentUpon>SetAOTypeCanHaveCharForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetParameterProtectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetParameterProtectionForm.Designer.cs">
+      <DependentUpon>SetParameterProtectionForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddActObjForm.resx">
+      <DependentUpon>AddActObjForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAOCharForm.resx">
+      <DependentUpon>AddAOCharForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPhenoForm.resx">
+      <DependentUpon>AddPhenoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPotentialInfluenceForm.resx">
+      <DependentUpon>AddPotentialInfluenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRobotCharForm.resx">
+      <DependentUpon>AddRobotCharForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRobotDefenceTypeForm.resx">
+      <DependentUpon>AddRobotDefenceTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeAOCharForm.resx">
+      <DependentUpon>ChangeAOCharForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePhenoForm.resx">
+      <DependentUpon>ChangePhenoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeRobotCharForm.resx">
+      <DependentUpon>ChangeRobotCharForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeRobotDefenceTypeForm.resx">
+      <DependentUpon>ChangeRobotDefenceTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelActObjForm.resx">
+      <DependentUpon>DelActObjForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelAOCharForm.resx">
+      <DependentUpon>DelAOCharForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePhenoForm.resx">
+      <DependentUpon>DeletePhenoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePotentialInfluenceForm.resx">
+      <DependentUpon>DeletePotentialInfluenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelPhenoFromPoligonForm.resx">
+      <DependentUpon>DelPhenoFromPoligonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelPoligonForm.resx">
+      <DependentUpon>DelPoligonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelRobotCharForm.resx">
+      <DependentUpon>DelRobotCharForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelRobotDefenceTypeForm.resx">
+      <DependentUpon>DelRobotDefenceTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyActionsForm.resx">
+      <DependentUpon>ModifyActionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyActObjChar.resx">
+      <DependentUpon>ModifyActObjChar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyCharacteristics.resx">
+      <DependentUpon>ModifyCharacteristics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyActObjTypesForm.resx">
+      <DependentUpon>ModifyActObjTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyInteractionTypes.resx">
+      <DependentUpon>ModifyInteractionTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetAOTypeCanHaveCharForm.resx">
+      <DependentUpon>SetAOTypeCanHaveCharForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetParameterProtectionForm.resx">
+      <DependentUpon>SetParameterProtectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChangeDB_Lib\ChangeDB_Lib.csproj">
+      <Project>{44298cdf-f2dc-4a4e-a66a-6fe3e7a453b6}</Project>
+      <Name>ChangeDB_Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
