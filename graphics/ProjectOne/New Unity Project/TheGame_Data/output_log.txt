@@ -6,30 +6,104 @@ Direct3D:
     Vendor:   Intel
     VRAM:     1024 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\ProjectOne\New Unity Project\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\ProjectOne\New Unity Project\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\ProjectOne\New Unity Project\TheGame_Data\Managed\ChangeDB_Lib.dll (this message is harmless)
-Loading D:\ProjectOne\New Unity Project\TheGame_Data\Managed\ChangeDB_Lib.dll into Unity Child Domain
-- Completed reload, in  0.166 seconds
-Platform assembly: D:\ProjectOne\New Unity Project\TheGame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\ProjectOne\New Unity Project\TheGame_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.018 seconds
+Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 16.314266 ms
-red eye Blaster(Clone)
+UnloadTime: 1.063727 ms
+2.724879: Spawned Bomb 0; Coords (5.0, 5.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+3.424886: Spawned Blaster 0; Coords (17.0, 5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+4.14086: Spawned Bomb 1; Coords (0.0, -5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+4.857555: Spawned Mine 0; Coords (0.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+5.457152: Player caused Damage: 40; HP: 60
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+5.573987: Spawned Mine 1; Coords (0.0, 5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+6.290205: Spawned Medkit 0; Coords (5.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+7.007114: Spawned Mine 2; Coords (-5.0, 5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+7.606465: Player caused Damage: 15; HP: 45
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+7.722907: Spawned Mine 3; Coords (-5.0, 5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+8.43953: Spawned Blaster 1; Coords (-5.0, -17.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+9.039433: Player caused Damage: 15; HP: 30
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+9.155893: Spawned Blaster 2; Coords (-17.0, -5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+9.755936: Player caused Damage: 15; HP: 15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+9.872455: Spawned Blaster 3; Coords (17.0, -10.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+10.47197: Player caused Damage: 40; HP: -25
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.830907 ms
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 277.
+Total: 5.301394 ms (FindLiveObjects: 0.021348 ms CreateObjectMapping: 0.013548 ms MarkObjects: 0.252897 ms  DeleteObjects: 5.013190 ms)
+
+Main
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.729131 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 435.
+Total: 0.260697 ms (FindLiveObjects: 0.025864 ms CreateObjectMapping: 0.014369 ms MarkObjects: 0.173250 ms  DeleteObjects: 0.046802 ms)
+
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 1070 -> priority: 1 
-  Thread -> id: 27d4 -> priority: 1 
-  Thread -> id: acc -> priority: 1 
-  Thread -> id: 16cc -> priority: 1 
+  Thread -> id: 14c -> priority: 1 
+  Thread -> id: 3744 -> priority: 1 
+  Thread -> id: 3658 -> priority: 1 
+  Thread -> id: 2f60 -> priority: 1 

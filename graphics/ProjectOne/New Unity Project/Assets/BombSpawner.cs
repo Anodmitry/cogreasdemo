@@ -19,7 +19,7 @@ public class BombSpawner : MonoBehaviour {
                     Quaternion.identity);
         BombSpawned.name = "Bomb " + iterator;
         iterator++;
-        Debug.Log(Time.time + ": Spawned " + BombSpawned.name + "; Coords " + BombSpawned.transform.position);
+        Debug.Log(Time.timeSinceLevelLoad + ": Spawned " + BombSpawned.name + "; Coords " + BombSpawned.transform.position);
     }
     void SpawnthisCoords(int[] coords)
     {
@@ -30,6 +30,6 @@ public class BombSpawner : MonoBehaviour {
                     Quaternion.identity);
         BombSpawned.name = "Bomb " + iterator;
         iterator++;
-        Debug.Log(Time.time + ": Spawned " + BombSpawned.name + "; Coords " + BombSpawned.transform.position);
+        Debug.Log(Time.timeSinceLevelLoad + ": Spawned " + BombSpawned.name + "; Coords " + BombSpawned.transform.position);
     }
 }

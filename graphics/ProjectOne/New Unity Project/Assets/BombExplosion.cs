@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BombExplosion : MonoBehaviour {
-    public float ExpTime = 2;
+    public float ExpTime = 0.3f;
     public GameObject explosion;
     public GameObject player;
-    public int damage = 10;
+    public int damage;
 	void Start () {
         if (gameObject.name != "BombLitSprite")
             StartCoroutine(Boom());

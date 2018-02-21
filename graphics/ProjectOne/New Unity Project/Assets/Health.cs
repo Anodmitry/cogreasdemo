@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour {
+    private int nextTime = 1;
     public int health = 100;
+    public float overHealDecayModifierPerSec = 0.1f;
     public Text HealthText;
     public GameObject killcam;
     void damage(string info)
@@ -14,13 +16,26 @@ public class Health : MonoBehaviour {
         health = health - Dmg;
         if (health <= 0)
         {
-            killcam.name = infoSplit[0];
-            killcam.tag = infoSplit[1];
+            killcam.name = Time.timeSinceLevelLoad.ToString();
             DontDestroyOnLoad(killcam);
             Application.LoadLevel("GameOver");
+            
         }
         HealthText.text = "Health: " + health.ToString();
-        Debug.Log(Time.time + ": " + name + " caused Damage: " + Dmg + "; HP: " + health);
+        Debug.Log(Time.timeSinceLevelLoad + ": " + name + " caused Damage: " + Dmg + "; HP: " + health);
     }
-
+    private void Update()
+    {
+        if (Time.time >= nextTime)
+        {
+            if (health > 100)
+            {
+                if (health > 105)
+                    health = health - Mathf.CeilToInt((health-100) * overHealDecayModifierPerSec);
+                else health = health - 1;
+                HealthText.text = "Health: " + health.ToString();
+            }
+            nextTime++;
+        }
+    }
 }

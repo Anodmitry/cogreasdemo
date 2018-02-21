@@ -40,7 +40,7 @@ public class BlasterSpawner : MonoBehaviour {
         }
         BlasterControl.name = "Blaster " + iterator;
         iterator++;
-        Debug.Log(Time.time + ": Spawned " + BlasterControl.name + "; Coords " + BlasterControl.transform.position);
+        Debug.Log(Time.timeSinceLevelLoad + ": Spawned " + BlasterControl.name + "; Coords " + BlasterControl.transform.position);
     }
 
     void SpawnthisCoords(int[]coords)
@@ -75,6 +75,6 @@ public class BlasterSpawner : MonoBehaviour {
         }
         BlasterControl.name = "Blaster " + iterator;
         iterator++;
-        Debug.Log(Time.time + ": Spawned " + BlasterControl.name + "; Coords " + BlasterControl.transform.position);
+        Debug.Log(Time.timeSinceLevelLoad + ": Spawned " + BlasterControl.name + "; Coords " + BlasterControl.transform.position);
     }
 }

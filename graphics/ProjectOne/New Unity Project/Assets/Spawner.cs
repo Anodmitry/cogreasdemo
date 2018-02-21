@@ -6,6 +6,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour {
     public float spawnWait;
     public float startWait;
+    public int[] Weights;
     public GameObject[] Hazard;
     private bool randomSpawn = true;
 
@@ -26,24 +27,41 @@ public class Spawner : MonoBehaviour {
         {
             string[] directive = command.Split(","[0]);
             float thisTime = float.Parse(directive[0]);
+            int type = int.Parse(directive[1]);
             yield return new WaitForSeconds(thisTime - timer);
             timer = thisTime;
-            if(directive.Length<3)
+            switch(type)
             {
-                Hazard[int.Parse(directive[1])].SendMessage("Spawnthis");
-            }
-            else
-            {
-                int[] coords = new int[] { int.Parse(directive[2]), int.Parse(directive[3]) };
-                Debug.Log(coords);
-                Hazard[int.Parse(directive[1])].SendMessage("SpawnthisCoords", coords);
-            }
+                case -1:// вкл/выкл рандомный спаун
+                    toggleRandomSpawn(int.Parse(directive[2])==1);
+                    break;
+                case -2:
+                    spawnWait = float.Parse(directive[2]);
+                    break;
+                case -3:
+                    for (int i = 0; i < Weights.Length; i++)
+                        Weights[i] = int.Parse(directive[i + 2]);
+                    break;
+                default:
+                    if (directive.Length < 3)
+                    {
+                        Hazard[type].SendMessage("Spawnthis");
+                    }
+                    else
+                    {
+                        int[] coords = new int[] { int.Parse(directive[2]), int.Parse(directive[3]) };
+                        Debug.Log(coords);
+                        Hazard[type].SendMessage("SpawnthisCoords", coords);
+                    }
+                    break;
+
+            }      
         }
     }
 
 
     //random spawn
-    public void setRandom(bool s)
+    public void toggleRandomSpawn(bool s)
     {
         randomSpawn = s;
         if (randomSpawn)
@@ -51,8 +69,10 @@ public class Spawner : MonoBehaviour {
     }
     public void spawnNext()
     {
-        int i = Random.Range(0, Hazard.Length);
-        Hazard[i].SendMessage("Spawnthis");
+        int i = Random.Range(0, Weights[Weights.Length-1]+1);
+        int j;
+        for (j = 0; i > Weights[j] && j < Weights.Length; j++);
+        Hazard[j].SendMessage("Spawnthis");
     }
 
     void Start()
@@ -71,7 +91,7 @@ public class Spawner : MonoBehaviour {
               Debug.Log(e.Message);
           }*/
         StartSpawnScripted();
-        //StartCoroutine(SpawnHazards());
+        StartCoroutine(SpawnHazards());
     }
 
     IEnumerator SpawnHazards()
