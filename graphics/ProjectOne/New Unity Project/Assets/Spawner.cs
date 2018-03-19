@@ -46,6 +46,7 @@ public class Spawner : MonoBehaviour {
                     if (directive.Length < 3)
                     {
                         Hazard[type].SendMessage("Spawnthis");
+                        //Hazard[type].SendMessage("SpawnthisLimited");
                     }
                     else
                     {
@@ -72,7 +73,7 @@ public class Spawner : MonoBehaviour {
         int i = Random.Range(0, Weights[Weights.Length-1]+1);
         int j;
         for (j = 0; i > Weights[j] && j < Weights.Length; j++);
-        Hazard[j].SendMessage("Spawnthis");
+        Hazard[j].SendMessage("SpawnthisLimited");
     }
 
     void Start()

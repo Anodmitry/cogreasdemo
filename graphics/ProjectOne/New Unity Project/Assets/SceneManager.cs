@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class SceneManager : MonoBehaviour {
 
-	public void LoadScene (string scene)
+    public GameObject passableInfo;
+    public void LoadScene (string scene)
     {
-        Debug.Log(scene);
         Application.LoadLevel(scene);
+    }
+    public void LoadSceneMain()
+    {
+        DontDestroyOnLoad(passableInfo);
+        Application.LoadLevel("Main");
     }
 }

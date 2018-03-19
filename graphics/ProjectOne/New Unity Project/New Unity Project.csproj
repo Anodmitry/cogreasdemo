@@ -84,6 +84,7 @@
     <Compile Include="Assets\ConnectDB.cs" />
     <Compile Include="Assets\Expire.cs" />
     <Compile Include="Assets\FiringMahLazor.cs" />
+    <Compile Include="Assets\GameQuit.cs" />
     <Compile Include="Assets\GridMove.cs" />
     <Compile Include="Assets\Health.cs" />
     <Compile Include="Assets\MedkitDeploy.cs" />
