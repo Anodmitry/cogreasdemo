@@ -7,6 +7,7 @@ public class MedkitDeploy : MonoBehaviour
     public float ExpTime = 5;
     public GameObject player;
     public int damage = -10;
+    private GameObject medkitSpawner;
 
     void Start()
     {
@@ -16,6 +17,8 @@ public class MedkitDeploy : MonoBehaviour
     IEnumerator Fade()
     {
         yield return new WaitForSeconds(ExpTime);
+        medkitSpawner = GameObject.Find("Medkit");
+        medkitSpawner.SendMessage("LimitedSpawnUpdate", gameObject.name);
         Destroy(gameObject);
     }
 
@@ -26,6 +29,8 @@ public class MedkitDeploy : MonoBehaviour
         if (((gameObject.transform.position.x - 2.5 <= playerCoords.x) && (gameObject.transform.position.x + 2.5 >= playerCoords.x)) && ((gameObject.transform.position.y - 2.5 <= playerCoords.y) && (gameObject.transform.position.y + 2.5 >= playerCoords.y)))
         {
             player.SendMessage("damage", gameObject.name + ";" + damage);
+            medkitSpawner = GameObject.Find("Medkit");
+            medkitSpawner.SendMessage("LimitedSpawnUpdate", gameObject.name);
             Destroy(gameObject);
         }
     }

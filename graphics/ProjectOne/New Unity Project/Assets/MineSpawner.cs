@@ -6,6 +6,7 @@ public class MineSpawner : MonoBehaviour
 {
     public GameObject Mine;
     private int iterator = 0;
+    private Vector3[] spawnedMinesCoords = new Vector3[10];
     public Vector3 randomPosition()
     {
         int i = (Random.Range(0, 4) - 2);
@@ -31,5 +32,25 @@ public class MineSpawner : MonoBehaviour
         MineSpawned.name = "Mine " + iterator;
         iterator++;
         Debug.Log(Time.time + ": Spawned " + MineSpawned.name + "; Coords " + MineSpawned.transform.position);
+    }
+    void SpawnthisLimited()
+    {
+        Vector3 randpos = randomPosition();
+        int i;
+        for (i = 0; i < 10 && randpos != spawnedMinesCoords[i]; i++) ;
+        if (i == 10)
+        {
+            GameObject MineSpawned = Instantiate(Mine,
+                    randomPosition(),
+                    Quaternion.identity);
+            MineSpawned.name = "Mine " + iterator;
+            spawnedMinesCoords[iterator % 10] = MineSpawned.transform.position;
+            iterator++;
+            Debug.Log(Time.time + ": Spawned " + MineSpawned.name + "; Coords " + MineSpawned.transform.position);
+        }
+    }
+    void LimitedSpawnUpdate(string mineName)
+    {
+        spawnedMinesCoords[int.Parse(mineName.Substring(5)) % 10] = new Vector3(-1, -1, -1);
     }
 }

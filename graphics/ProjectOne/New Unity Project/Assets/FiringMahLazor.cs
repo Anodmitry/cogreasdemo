@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FiringMahLazor : MonoBehaviour {
-    public GameObject Blaster;
+    private GameObject blasterSpawner;
     public GameObject player;
     public GameObject laser;
     public float delay;
@@ -15,10 +15,10 @@ public class FiringMahLazor : MonoBehaviour {
     }
     IEnumerator ShoopDaWhoop()
     {
-        float y = Blaster.transform.position.y;
-        float x = Blaster.transform.position.x;
-        float z = Blaster.transform.position.z;
-        yield return new WaitForSeconds(delay/2);
+        float y = transform.position.y;
+        float x = transform.position.x;
+        float z = transform.position.z;
+        yield return new WaitForSeconds(delay / 2);
         if (x % 5 != 0)
         {
             transform.position = new Vector3(x*18/17,y,z);
@@ -42,8 +42,9 @@ public class FiringMahLazor : MonoBehaviour {
             if ((px <= x + 2.5) && (px >= x - 2.5))
                 player.SendMessage("damage", gameObject.name + ";" + damage);
         }
-
         yield return new WaitForSeconds(FadeTime);
+        blasterSpawner = GameObject.Find("Blaster");
+        blasterSpawner.SendMessage("LimitedSpawnUpdate", gameObject.name);
         Destroy(gameObject);
     }
 
