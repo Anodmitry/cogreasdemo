@@ -1,10 +1,11 @@
 Initialize engine version: 5.6.0f3 (497a0f351392)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics (ID=0x106)
     Vendor:   Intel
-    VRAM:     1024 MB
+    VRAM:     944 MB
+    Driver:   9.17.10.4459
 Begin MonoManager ReloadAssembly
 Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -14,96 +15,117 @@ Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_
 Loading D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.018 seconds
+- Completed reload, in  0.052 seconds
 Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\cogreasdemo\graphics\ProjectOne\New Unity Project\TheGame_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.063727 ms
-2.724879: Spawned Bomb 0; Coords (5.0, 5.0, 0.0)
+UnloadTime: 2.825196 ms
+2.716405: Spawned Blaster 0; Coords (17.0, 0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-3.424886: Spawned Blaster 0; Coords (17.0, 5.0, 0.0)
+3.417803: Spawned Blaster 1; Coords (-17.0, 0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-4.14086: Spawned Bomb 1; Coords (0.0, -5.0, 0.0)
+4.119066: Spawned Medkit 0; Coords (0.0, -10.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-4.857555: Spawned Mine 0; Coords (0.0, 0.0, 0.0)
+4.819998: Spawned Medkit 1; Coords (-10.0, 5.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-5.457152: Player caused Damage: 40; HP: 60
+5.521177: Spawned Mine 0; Coords (0.0, 0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-5.573987: Spawned Mine 1; Coords (0.0, 5.0, 0.0)
+6.222351: Spawned Mine 1; Coords (0.0, 0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-6.290205: Spawned Medkit 0; Coords (5.0, 0.0, 0.0)
+6.923435: Spawned Blaster 2; Coords (-10.0, -17.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-7.007114: Spawned Mine 2; Coords (-5.0, 5.0, 0.0)
+7.624658: Spawned Bomb 0; Coords (5.0, -10.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-7.606465: Player caused Damage: 15; HP: 45
+8.14215: Player caused Damage: -10; HP: 110
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-7.722907: Spawned Mine 3; Coords (-5.0, 5.0, 0.0)
+8.325809: Spawned Blaster 3; Coords (-17.0, 0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-8.43953: Spawned Blaster 1; Coords (-5.0, -17.0, 0.0)
+9.026992: Spawned Bomb 1; Coords (0.0, -10.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-9.039433: Player caused Damage: 15; HP: 30
+9.728216: Spawned Mine 2; Coords (-5.0, -5.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-9.155893: Spawned Blaster 2; Coords (-17.0, -5.0, 0.0)
+10.3291: Player caused Damage: 40; HP: 66
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-9.755936: Player caused Damage: 15; HP: 15
+10.42922: Spawned Mine 3; Coords (-10.0, 0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-9.872455: Spawned Blaster 3; Coords (17.0, -10.0, 0.0)
+11.13039: Spawned Bomb 2; Coords (0.0, 0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-10.47197: Player caused Damage: 40; HP: -25
+11.83158: Spawned Blaster 4; Coords (-17.0, -10.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.830907 ms
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 277.
-Total: 5.301394 ms (FindLiveObjects: 0.021348 ms CreateObjectMapping: 0.013548 ms MarkObjects: 0.252897 ms  DeleteObjects: 5.013190 ms)
-
-Main
+12.5327: Spawned Bomb 3; Coords (5.0, 5.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.729131 ms
+13.23391: Spawned Medkit 2; Coords (0.0, 5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 435.
-Total: 0.260697 ms (FindLiveObjects: 0.025864 ms CreateObjectMapping: 0.014369 ms MarkObjects: 0.173250 ms  DeleteObjects: 0.046802 ms)
+13.93502: Spawned Medkit 3; Coords (5.0, -5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Setting up 4 worker threads for Enlighten.
-  Thread -> id: 14c -> priority: 1 
-  Thread -> id: 3744 -> priority: 1 
-  Thread -> id: 3658 -> priority: 1 
-  Thread -> id: 2f60 -> priority: 1 
+14.63622: Spawned Blaster 5; Coords (-17.0, -10.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15.33754: Spawned Mine 4; Coords (-10.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+16.0385: Spawned Medkit 4; Coords (-10.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+16.73978: Spawned Medkit 5; Coords (-10.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+17.44116: Spawned Medkit 6; Coords (-10.0, -5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+18.14196: Spawned Blaster 6; Coords (17.0, -5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+18.84313: Spawned Medkit 7; Coords (0.0, 5.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1f18 -> priority: 1 
