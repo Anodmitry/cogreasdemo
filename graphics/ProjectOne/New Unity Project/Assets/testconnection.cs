@@ -24,7 +24,7 @@ public class testconnection : MonoBehaviour {
 
             SqlConnection dbconn = new SqlConnection(connstr);
             dbconn.Open();
-            string sqlExpression = "INSERT INTO Table_1 (test) VALUES ('test3')";// "INSERT INTO Active_objects (ao_name, id_type) VALUES ('test_171117', '1')";
+            string sqlExpression = "INSERT INTO Table_1 (test) VALUES ('test4')";// "INSERT INTO Active_objects (ao_name, id_type) VALUES ('test_171117', '1')";
             SqlCommand thisCommand = new SqlCommand(sqlExpression, dbconn);
             SqlDataReader thisReader = thisCommand.ExecuteReader();
             dbconn.Close();
