@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BombSpawner : MonoBehaviour {
 
     public GameObject Bomb;
@@ -46,7 +47,7 @@ public class BombSpawner : MonoBehaviour {
             BombSpawned.name = "Bomb " + iterator;
             spawnedBombsCoords[iterator % 10] = BombSpawned.transform.position;
             iterator++;
-            Debug.Log(Time.timeSinceLevelLoad + ": Spawned " + BombSpawned.name + "; Coords " + BombSpawned.transform.position);
+            Debug.Log(Time.timeSinceLevelLoad + ": Spawned " + BombSpawned.name + "; Coords " + BombSpawned.transform.position);           
         }
     }
     void LimitedSpawnUpdate(string bombName)

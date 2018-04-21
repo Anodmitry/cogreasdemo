@@ -15,7 +15,7 @@ public class testconnection : MonoBehaviour {
             //в свою очередь, при каждом вызове runsqlcommand вызывается метод, закрывающий temp_reader
             //"user id = admin; password = adminadmin; Initial Catalog=envdb;
             string connstr =
-                 @"Data Source=127.0.0.1\sqlexpress01;" +
+                 @"Data Source=127.0.0.1\sqlexpress;" +
                  "user id = admin;" +
                  "password = adminadmin;" +
                  "Initial Catalog=envdb_mini;";// +
