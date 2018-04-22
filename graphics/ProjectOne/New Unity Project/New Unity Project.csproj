@@ -79,12 +79,14 @@
     <Reference Include="System.Data">
       <HintPath>Assets\System.Data.dll</HintPath>
     </Reference>
+    <Reference Include="ChangeDB_Lib">
+      <HintPath>Assets\Plugins\ChangeDB_Lib.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BlasterSpawner.cs" />
     <Compile Include="Assets\BombExplosion.cs" />
     <Compile Include="Assets\BombSpawner.cs" />
-    <Compile Include="Assets\ConnectDB.cs" />
     <Compile Include="Assets\Expire.cs" />
     <Compile Include="Assets\FiringMahLazor.cs" />
     <Compile Include="Assets\GameQuit.cs" />

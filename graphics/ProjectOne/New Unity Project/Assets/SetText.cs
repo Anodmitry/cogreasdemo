@@ -11,6 +11,7 @@ public class SetText : MonoBehaviour {
     void Awake () {
         killcam = GameObject.FindGameObjectWithTag("Finish");
         timeText.text = timeText.text + killcam.name;
+        DestroyObject(killcam);
 	}
 	
 	// Update is called once per frame

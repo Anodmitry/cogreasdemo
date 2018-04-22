@@ -18,8 +18,7 @@ public class Health : MonoBehaviour {
         {
             killcam.name = Time.timeSinceLevelLoad.ToString();
             DontDestroyOnLoad(killcam);
-            Application.LoadLevel("GameOver");
-            
+            Application.LoadLevel("GameOver");           
         }
         HealthText.text = "Health: " + health.ToString();
         Debug.Log(Time.timeSinceLevelLoad + ": " + name + " caused Damage: " + Dmg + "; HP: " + health);

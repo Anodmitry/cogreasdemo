@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Data.SqlClient;
 
 public class BlasterSpawner : MonoBehaviour {
 
@@ -8,6 +9,30 @@ public class BlasterSpawner : MonoBehaviour {
     private int iterator = 0;
     private Vector3[] spawnedBlastersCoords = new Vector3[10];
 
+    void Ins(string actobj_name, string actobj_type, string x, string y, string timefromstart, string isactive)
+    {
+        try
+        {
+            string connstr =
+                 @"Data Source=127.0.0.1\sqlexpress01;" +
+                 "user id = admin;" +
+                 "password = adminadmin;" +
+                 "Initial Catalog=envdb_mini;";
+
+            SqlConnection dbconn = new SqlConnection(connstr);
+            dbconn.Open();
+
+            string sqlExpression = "INSERT INTO History (actobj_name, actobj_type, x, y, timefromstart, isactive) VALUES ('" + actobj_name + "','" + actobj_type + "','" + x + "','" + y + "','" + timefromstart + "','" + isactive + "')";
+            SqlCommand thisCommand = new SqlCommand(sqlExpression, dbconn);
+            SqlDataReader thisReader = thisCommand.ExecuteReader();
+            dbconn.Close();
+           // Debug.Log("Success");
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e.Message);
+        }
+    }
     void Spawnthis()
     {
         int i = Random.Range(1, 4);
@@ -33,6 +58,7 @@ public class BlasterSpawner : MonoBehaviour {
         blasterSpawned.name = "Blaster " + iterator;
         iterator++;
         Debug.Log(Time.timeSinceLevelLoad + ": Spawned " + blasterSpawned.name + "; Coords " + blasterSpawned.transform.position);
+        Ins(blasterSpawned.name, "Blaster", blasterSpawned.transform.position.x.ToString(), blasterSpawned.transform.position.y.ToString(), Time.timeSinceLevelLoad.ToString(), "1");
     }
 
     void SpawnthisCoords(int[]coords)
@@ -60,6 +86,7 @@ public class BlasterSpawner : MonoBehaviour {
         blasterSpawned.name = "Blaster " + iterator;
         iterator++;
         Debug.Log(Time.timeSinceLevelLoad + ": Spawned " + blasterSpawned.name + "; Coords " + blasterSpawned.transform.position);
+        Ins(blasterSpawned.name, "Blaster", blasterSpawned.transform.position.x.ToString(), blasterSpawned.transform.position.y.ToString(), Time.timeSinceLevelLoad.ToString(), "1");
     }
     void SpawnthisLimited()
     {
@@ -96,6 +123,7 @@ public class BlasterSpawner : MonoBehaviour {
         spawnedBlastersCoords[iterator % 5] = blasterSpawned.transform.position;
         iterator++;
         Debug.Log(Time.timeSinceLevelLoad + ": Spawned " + blasterSpawned.name + "; Coords " + blasterSpawned.transform.position);
+        Ins(blasterSpawned.name, "Blaster", blasterSpawned.transform.position.x.ToString(), blasterSpawned.transform.position.y.ToString(), Time.timeSinceLevelLoad.ToString(), "1");
     }
     void LimitedSpawnUpdate(string blasterName)
     {

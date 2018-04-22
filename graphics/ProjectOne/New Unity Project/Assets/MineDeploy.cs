@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Data.SqlClient;
 
 public class MineDeploy : MonoBehaviour {
     private GameObject mineSpawner;
@@ -10,6 +11,30 @@ public class MineDeploy : MonoBehaviour {
     public int damage = 10;
     public int deployTime = 2;
     private bool armed = false;
+
+    void Upd(string actobj_name, string paramforupdate, string newvalue)
+    {
+        try
+        {
+            string connstr =
+                 @"Data Source=127.0.0.1\sqlexpress01;" +
+                 "user id = admin;" +
+                 "password = adminadmin;" +
+                 "Initial Catalog=envdb_mini;";
+
+            SqlConnection dbconn = new SqlConnection(connstr);
+            dbconn.Open();
+            string sqlExpression = "UPDATE History SET " + paramforupdate + " = '" + newvalue + "' WHERE actobj_name = '" + actobj_name + "'";
+            SqlCommand thisCommand = new SqlCommand(sqlExpression, dbconn);
+            SqlDataReader thisReader = thisCommand.ExecuteReader();
+            dbconn.Close();
+            //Debug.Log("Success");
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e.Message);
+        }
+    }
 
     void Start () {
         if (gameObject.name != "Mine")
@@ -22,6 +47,7 @@ public class MineDeploy : MonoBehaviour {
         yield return new WaitForSeconds(ExpTime - deployTime);
         mineSpawner = GameObject.Find("Mine");
         mineSpawner.SendMessage("LimitedSpawnUpdate", gameObject.name);
+        Upd(gameObject.name, "isactive", "0");
         Destroy(gameObject);
     }
 	
@@ -33,6 +59,7 @@ public class MineDeploy : MonoBehaviour {
             player.SendMessage("damage", gameObject.name + ";" + damage);
             mineSpawner = GameObject.Find("Mine");
             mineSpawner.SendMessage("LimitedSpawnUpdate", gameObject.name);
+            Upd(gameObject.name, "isactive", "0");
             Destroy(gameObject);
             Instantiate(explosion, transform.position, transform.rotation);
         }
