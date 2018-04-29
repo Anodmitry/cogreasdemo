@@ -12,6 +12,7 @@ public class Health : MonoBehaviour {
     void damage(string info)
     {
         string[] infoSplit = info.Split(";"[0]);
+        string damageDealer = infoSplit[0];
         int Dmg = int.Parse(infoSplit[1]);
         health = health - Dmg;
         if (health <= 0)
@@ -21,7 +22,7 @@ public class Health : MonoBehaviour {
             Application.LoadLevel("GameOver");           
         }
         HealthText.text = "Health: " + health.ToString();
-        Debug.Log(Time.timeSinceLevelLoad + ": " + name + " caused Damage: " + Dmg + "; HP: " + health);
+        Debug.Log(Time.timeSinceLevelLoad + ": " + damageDealer + " caused Damage: " + Dmg + "; HP: " + health);
     }
     private void Update()
     {

@@ -5,10 +5,16 @@ using System.Data.SqlClient;
 
 public class BombExplosion : MonoBehaviour {
     private GameObject bombSpawner;
-    public float ExpTime = 0.3f;
+    private float ExpTime = 0.3f;
     public GameObject explosion;
     public GameObject player;
-    public int damage;
+    private int damage = 15;
+
+    void ChangeDamage(int dmg)
+    {
+        damage = dmg;
+    }
+
     void Upd(string actobj_name, string paramforupdate, string newvalue)
     {
         try

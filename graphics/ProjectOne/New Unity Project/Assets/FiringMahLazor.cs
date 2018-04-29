@@ -7,9 +7,14 @@ public class FiringMahLazor : MonoBehaviour {
     private GameObject blasterSpawner;
     public GameObject player;
     public GameObject laser;
-    public float delay;
-    public float FadeTime;
-    public float damage;
+    private float delay = 2;
+    private float FadeTime = 0.3f;
+    private float damage = 40;
+
+    void ChangeDamage(float dmg)
+    {
+        damage = dmg;
+    }
 
     void Upd(string actobj_name, string paramforupdate, string newvalue)
     {

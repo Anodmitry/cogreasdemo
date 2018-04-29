@@ -8,9 +8,14 @@ public class MineDeploy : MonoBehaviour {
     public float ExpTime = 5;
     public GameObject explosion;
     public GameObject player;
-    public int damage = 10;
-    public int deployTime = 2;
+    private int damage = 10;
+    private int deployTime = 2;
     private bool armed = false;
+
+    void ChangeDamage(int dmg)
+    {
+        damage = dmg;
+    }
 
     void Upd(string actobj_name, string paramforupdate, string newvalue)
     {
